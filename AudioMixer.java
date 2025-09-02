@@ -1,5 +1,9 @@
 public class AudioMixer {
+<<<<<<< HEAD
    private String mixerModel;
+=======
+    private String mixerModel;
+>>>>>>> 2209caddce798b08f99fdae7b3126da9fd0a1368
     private int numberOfChannels;
     private boolean hasBluetoothConnectivity;
     private double maxVolumeDecibels;
@@ -76,5 +80,9 @@ public class AudioMixer {
         mixer2.displayMixerStatus();
         mixer3.displayMixerStatus();
         mixer4.displayMixerStatus();
+<<<<<<< HEAD
     } 
+=======
+    }
+>>>>>>> 2209caddce798b08f99fdae7b3126da9fd0a1368
 }
