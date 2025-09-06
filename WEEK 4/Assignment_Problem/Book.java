@@ -48,7 +48,7 @@ class Book {
     }
 
     public static void main(String[] args) {
-        Book b1 = new Book();
+        
         Book b2 = new Book("1984", "George Orwell");
         Book b3 = new Book("Java Basics", "James Gosling", "12345", true);
 
