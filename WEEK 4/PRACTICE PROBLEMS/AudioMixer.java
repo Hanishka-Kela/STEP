@@ -9,7 +9,6 @@ public class AudioMixer {
     private double maxVolumeDecibels;
     private String[] connectedDevices;
     private int deviceCount;
-
     // No-argument constructor
     public AudioMixer() {
         this("StandardMix-8", 8, false, 120.0); // Chaining to the main constructor
