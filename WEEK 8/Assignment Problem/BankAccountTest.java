@@ -1,0 +1,4 @@
+abstract class BankAccount { protected double balance; BankAccount(double balance) { this.balance = balance; } abstract void calculateInterest(); void deposit(double amt) { balance += amt; } }
+class SavingsAccount extends BankAccount { SavingsAccount(double balance) { super(balance); } void calculateInterest() { balance += balance * 0.04; System.out.println("Savings balance after interest: " + balance); } }
+class CurrentAccount extends BankAccount { CurrentAccount(double balance) { super(balance); } void calculateInterest() { balance += balance * 0.01; System.out.println("Current balance after interest: " + balance); } }
+public class BankAccountTest { public static void main(String[] args) { SavingsAccount s = new SavingsAccount(1000); s.deposit(500); s.calculateInterest(); CurrentAccount c = new CurrentAccount(2000); c.deposit(1000); c.calculateInterest(); } }
